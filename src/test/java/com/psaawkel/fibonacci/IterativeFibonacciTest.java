@@ -39,6 +39,16 @@ public class IterativeFibonacciTest {
         assertEquals(4181,fibo.calculate(19));
     }
 
+    @Test
+    void fiftyTest(){
+        assertEquals(12586269025L,fibo.calculate(50));
+    }
+
+    @Test
+    void hundredTest(){
+        assertEquals(3736710778780434371L,fibo.calculate(100));
+    }
+
     @BeforeAll
     public static void prepareForTesting(){
         fibo = new IterativeFibonacci();

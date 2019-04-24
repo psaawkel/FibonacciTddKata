@@ -29,6 +29,16 @@ public class RecursiveFibonacciTest {
         assertEquals(5,fibo.calculate(5));
     }
 
+    @Test
+    void tenTest(){
+        assertEquals(55,fibo.calculate(10));
+    }
+
+    @Test
+    void nineteenTest(){
+        assertEquals(4181,fibo.calculate(19));
+    }
+
     @BeforeAll
     public static void prepareForTesting(){
         fibo = new RecursiveFibonacci();

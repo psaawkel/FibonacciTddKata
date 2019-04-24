@@ -10,20 +10,8 @@ public class RecursiveFibonacciTest {
     static IFibonacci fibo;
 
     @Test
-    void simplyTest(){
-        assertEquals(0,fibo.calculate(10));
-        assertEquals(0,fibo.calculate(5));
-        assertEquals(0,fibo.calculate(2));
-        assertEquals(0,fibo.calculate(1));
-    }
-
-
-    @Test
-    void simplyTest2(){
-        assertEquals(0,fibo.calculate(10));
-        assertEquals(0,fibo.calculate(5));
-        assertEquals(0,fibo.calculate(2));
-        assertEquals(0,fibo.calculate(1));
+    void zeroTest(){
+        assertEquals(0,fibo.calculate(0));
     }
 
     @BeforeAll

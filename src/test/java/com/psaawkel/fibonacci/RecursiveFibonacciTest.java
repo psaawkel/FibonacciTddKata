@@ -24,6 +24,11 @@ public class RecursiveFibonacciTest {
         assertEquals(1,fibo.calculate(2));
     }
 
+    @Test
+    void fiveTest(){
+        assertEquals(5,fibo.calculate(5));
+    }
+
     @BeforeAll
     public static void prepareForTesting(){
         fibo = new RecursiveFibonacci();

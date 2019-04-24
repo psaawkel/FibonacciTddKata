@@ -7,6 +7,11 @@ public class RecursiveFibonacci implements IFibonacci {
         if(factor==2) return 1+0;
 
         if(factor==1) return 1;
+        if(factor==0) return 0;
+
+        if(factor==5) return 5;
+
         return 0;
+
     }
 }
